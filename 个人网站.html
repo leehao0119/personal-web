@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background: white;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .project-card {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+            background: #333;
+            color: white;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background: #45a049;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人网站</h1>
+    <p>一个展示我的故事与作品的地方</p>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我</a>
+    <a href="#projects">我的作品</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<section id="home">
+    <h2>首页</h2>
+    <p>你好！我是一名热爱学习与创作的人，这里是我的个人网站，记录了我的生活、工作和项目。</p>
+</section>
+
+<section id="about">
+    <h2>关于我</h2>
+    <p>我对技术、设计和创新充满热情。目前专注于人工智能、软件开发和项目管理，同时也喜欢写作与分享。</p>
+</section>
+
+<section id="projects">
+    <h2>我的作品</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>项目 1</h3>
+            <p>这是我的第一个项目的介绍。</p>
+        </div>
+        <div class="project-card">
+            <h3>项目 2</h3>
+            <p>这是我的第二个项目的介绍。</p>
+        </div>
+        <div class="project-card">
+            <h3>项目 3</h3>
+            <p>这是我的第三个项目的介绍。</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>联系我</h2>
+    <form>
+        <label>姓名：</label>
+        <input type="text" placeholder="请输入你的姓名" required>
+        
+        <label>邮箱：</label>
+        <input type="email" placeholder="请输入你的邮箱" required>
+        
+        <label>留言：</label>
+        <textarea placeholder="请输入你的留言" rows="5" required></textarea>
+        
+        <button type="submit">发送</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 我的个人网站 | 由我用 ❤️ 打造</p>
+</footer>
+
+</body>
+</html>
